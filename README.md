@@ -10,11 +10,11 @@ rendered text via `~name~`
 
 the supported syntax elements are
  - `#title#` for a heading
- - `\`code\`` for code
+ - `` `code` `` for code
  - `_italic_` and `*bold*`
  - `~objectname~` to insert an object from a scope
 
-all blocks must be closed, any use of the `*,\`,~,_,#` characters must be escaped
+all blocks must be closed, any use of the `` *,`,~,_,# `` characters must be escaped
 
 ```js
 import umd from './umd.js'
