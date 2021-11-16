@@ -33,8 +33,8 @@ const umd = (markdown, scope) => {
       let token = markdown_array.splice(markdown_array.lastIndexOf('~')+1).reverse().join('')
       markdown_array.pop()
       if (scope[token]) {
-        output_string += '%o'
-        output_substitutions.push(scope[token])
+        output_string += '%c%o%c'
+        output_substitutions.push(md_css.clear, scope[token], state.join(' '))
       }
     },
     '#': process_token('#'),
