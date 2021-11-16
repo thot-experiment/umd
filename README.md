@@ -30,6 +30,8 @@ inject objects from a scope by name
 ~foo~ 
 and also
 ~bar~
+
+feel free to try it yourself right here in the console \`> umd(...)\`
 `, 
   {
     foo: {gotta:'pumpit', to: 'jumpit'},
