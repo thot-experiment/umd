@@ -2,8 +2,9 @@
 tiny doc renderer for the browser console with markdown-ish syntax
 
 ## usage
-
 see [github pages](https://thot-experiment.github.io/umd/) and open up console for a demo
+
+![example image](https://raw.githubusercontent.com/thot-experiment/umd/main/umd_demo.png)
 
 the renderer can be imported via `import umd from './umd.js'`
 and input text is rendered via `umd(input_text)`, optionally an object can
