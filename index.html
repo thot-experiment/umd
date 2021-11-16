@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>umd demo</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    open up the developer console!
+    <script type="module"> 
+import umd from './umd.js'
+
+umd(
+`#micromarkdown demo# 
+it currently supports rendering text in a variable width font
+making things *bold* and _italic_ or even *_bold and italic_*
+and little \`code blocks\` like so
+
+but the super neatoburrito feature is that it can also
+inject objects from a scope by name
+~foo~ 
+and also
+~bar~
+`, 
+  {
+    foo: {gotta:'pumpit', to: 'jumpit'},
+    bar: 'tube city!'.split('')
+  }
+)
+    </script>
+  </body>
+</html>
